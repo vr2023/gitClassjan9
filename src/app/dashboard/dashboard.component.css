@@ -1,0 +1,35 @@
+.divbox{
+width:350px;
+height:150px;
+
+background-color: white;
+margin-top: 60px;
+}
+.widthr{
+    height:690px;
+    margin-top: 3px!important;
+}
+
+.divbox-1{
+    width:350px;
+    height:360px;
+   
+    background-color: white;
+    margin-top: 60px;
+    }
+
+    .divbox-3{
+        width:700px;
+        height:360px;
+        
+        background-color: white;
+        margin-top: 60px;
+        margin-left: 25px;
+        }
+        .divbox-3-1{
+            width:200px;
+            height:150px;
+            
+            background-color: white;
+            margin-top: 60px;
+            }

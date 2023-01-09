@@ -1,0 +1,40 @@
+ 
+      <div class="container">
+        <div class="row align-items-center justify-content-center vh-100">
+          <div class="col-md-7">
+            <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" class="w-50">
+            <h3>Facebook helps you connect and share with the people in your life.</h3>
+          </div>
+          <div class="col-md-5">
+            <form class="login-form" [formGroup]="loginFb" (ngSubmit)="login()">
+              <div class="mb-3">
+                <input type="text" class="form-control form-control-lg" formControlName="email" placeholder="Email address or phone number"
+                  required>
+                  <div 
+                *ngIf="loginFb.get('email').hasError('required') && loginFb.get('email').touched && loginFb.get('email').invalid">
+                <span style="color:red">*Email is Required</span>
+              </div>
+              </div>
+              
+              
+              <div class="mb-3">
+                <input type="password" class="form-control"  formControlName="password" placeholder="Password"
+                  required>
+                  <div 
+                *ngIf="loginFb.get('password').hasError('required') && loginFb.get('password').touched && loginFb.get('password').invalid">
+                <span style="color:red">*Password is Required</span>
+              </div>
+              </div>
+              
+              <button type="button" class="btn btn-custom btn-lg btn-block mt-3" style="width:474px" [disabled]="!loginFb.valid" >Login</button>
+              <div class="text-center pt-3 pb-3">
+                <a  class="">Forgotten password?</a>
+                <hr>
+                <button type="button" class="btn btn-success btn-lg mt-3" routerLink="/fb" >Create New Account</button>
+              </div>
+            </form>
+            <p class="pt-3 text-center"><b>Create a Page</b> for a celebrity, band or business.</p>
+          </div>
+        </div>
+      </div>
+    

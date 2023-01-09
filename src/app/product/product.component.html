@@ -1,0 +1,61 @@
+<app-header></app-header>
+
+
+<div class="row pt-0 mt-0 p-3">
+<div class="col-1 pt-0 imgside" >
+  <div class="imgs" *ngFor="let img of product.images " >
+   <img src="{{img}}" alt="" width="100%;" height="80px" (mouseover)="changeimage(img)">
+  </div>
+</div>
+
+
+<div class="col-4" style="margin-left: -40px;">
+  <div class="card" style="width:503px;margin-left: 30px;">
+    <img src="{{urlImg}}" alt="Avatar" style="width:100%;height:500px" >
+  </div>
+  <div class="d-flex flex-row p-2">
+    <button class="cart-button btn btn-warning btn-sm">   
+      <i class='fa fa-shopping-cart white-color'></i>
+    Add to cart
+    </button>
+    <button class="cart-button-1 btn btn-warning btn-sm">   
+      <i class='fa fa-bolt white-color'></i>
+      Buy Now
+      </button>
+      
+  </div>
+</div>
+
+
+  <div class="col-6" style="margin-top: 5px;margin-left:30px;margin-top: 5px;">
+    <span class="headd">{{product.title}}</span>
+    <span class="desc">{{product.description}}</span>
+    <h6 class="sp">Special Price</h6>
+    <h1>₹{{product.price}}
+      <span class="sp mt-3 mr-1" >12% off</span>
+    </h1>
+      
+      <span style="font-size:25px" class="mb-5"> 
+        <span class="badge rounded-pill text-bg-success ">{{product.rating}}<span class="fa fa-star checked"></span></span> Ratings and 10 Reviews</span>
+  <div>
+    <h5 class="mb-3">Available Offers</h5>
+    <div class="mb-2">
+    <i class="fa fa-tag" style="color:green"></i>
+    <span>Special PriceGet at flat ₹359 <span style="color:blue">T&C</span></span>
+    </div>
+    <div class="mb-2">
+      <i class="fa fa-tag" style="color:green"></i>
+      <span>Bank Offer5% Cashback on Flipkart Axis Bank Card <span style="color:blue">T&C</span></span>
+      </div>
+      <div class="mb-2">
+        <i class="fa fa-tag" style="color:green"></i>
+        <span>Bank Offer10% off on Bank of Baroda Credit Card EMI Transactions, up to ₹3,000 on orders of ₹5,000 and above<span style="color:blue">T&C</span></span>
+        </div>
+        <div >
+          <i class="fa fa-tag" style="color:green"></i>
+          <span>Partner OfferPurchase now & get a surprise cashback coupon for January / February 2023 <span style="font-weight:bold;color:blue">Know More</span></span>
+          </div>
+  </div>
+    
+  </div>
+</div>

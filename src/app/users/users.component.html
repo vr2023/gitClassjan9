@@ -1,0 +1,29 @@
+<table class="table table-bordered">
+    <thead>
+      <tr class="th-dark">
+       <th>Name</th>
+       <th>Email</th>
+       <th>website</th>
+       <th>Address</th>
+       <th>Company</th>
+       <th>Suite</th>
+       <th>Company Name</th>
+       <th>Comapny BS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor= "let data of userDetails">
+       <td>{{data.name}}</td>
+       <td>{{data.email}}</td>
+       <td>{{data.website}}</td>
+       <td>{{data.address.street}}</td>
+       <td>{{data.company.name}}</td>
+       <td> {{data.address.suite}}</td>
+       <td>{{data.company.name}}</td>
+       <td>{{data.company.bs}}</td>
+      </tr>
+   
+
+   
+    </tbody>
+  </table>
